@@ -18,3 +18,5 @@ const automaticLi = (info) => {
 const links = [{ info1: "About" }, { info1: "Projects" }, { info1: "Contacts" }];
 
 automaticLi(links);
+
+//https://www.figma.com/design/0J3o6xle1rlOyrpsPwaAYw/Personal-Portfolio-Website-Template--Community-?node-id=7-191&t=kmMvOWLdVIL4aTE8-0

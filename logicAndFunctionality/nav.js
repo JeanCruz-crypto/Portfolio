@@ -1,4 +1,3 @@
-const body = document.body;
 const topContainerInfo = document.querySelector(".topContainerInfo");
 const listContentAbout = document.querySelector(".listContentAbout");
 
@@ -8,14 +7,15 @@ const automaticLi = (info) => {
     let liContent = document.createElement("li");
     let linkInfo1 = document.createElement("a");
 
-    linkInfo1.innerText = turnInArray.info1; 
+    linkInfo1.innerText = turnInArray.info1;
+    linkInfo1.href = turnInArray.link;
 
     liContent.appendChild(linkInfo1);
-    body.appendChild(liContent);
+    listContentAbout.appendChild(liContent);
   }
 };
 
-const links = [{ info1: "About" }, { info1: "Projects" }, { info1: "Contacts" }];
+const links = [{ info1: "About", link: "asasdda" }, { info1: "Projects", link: "dsadasdfssf" }, { info1: "Contacts", link: "adsaddfaadf" }];
 
 automaticLi(links);
 

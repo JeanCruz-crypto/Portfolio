@@ -1,3 +1,19 @@
 body {
   margin: 0;
 }
+
+.woman-img {
+  position: absolute;
+  top: 57%;
+  left: 6%;
+  width: 30%;
+  height: 42%;
+}
+
+.svg-cont {
+  position: relative;
+}
+
+.woman-svg {
+  overflow: hidden;
+}

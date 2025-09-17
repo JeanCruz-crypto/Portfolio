@@ -1,19 +1,101 @@
 body {
   margin: 0;
+  padding: 0px 120px 0px;
+  /* font-family:'Courier New', Courier, monospace  */
+}
+
+.generalContainerInfo {
+  display: flex;
+}
+
+.rightSideInfo {
+  position: absolute;
+  height: 97%;
+  right: 0px;
+  top: 0px;
+  z-index: 1;
+}
+
+.infoSvgBackground {
+  position: relative;
+  background-color: #FFC800;
+  height: 98%;
+  transition-duration: 2s;
+}
+
+.infoSvgBackground:hover {
+  background-color:#00ffff;
+}
+
+.subtitleProfession {
+  margin-top: 50px;
+  color:#FFC800;
+}
+
+.titleInfoCustomer {
+  font-size: 60px;
+}
+
+.textInfoContact {
+  color: grey;
+  font-size: 20px;
+}
+
+.projectsButton {
+  border-radius: 5px;
+  border-style: none;
+  background-color:#FFC800;
+  height: 30px;
+  width: 80px;
+  margin-right: 10px;
+  transition-duration: 1s;
+  cursor: pointer;
+}
+
+.projectsButton:hover {
+  background-color: white;
+  border-style: solid;
+}
+
+.socialMediaButton {
+  border-radius: 5px;
+  border-color: black;
+  background-color: white;
+  height: 30px;
+  width: 80px;
+  transition-duration: 1s;
+  cursor: pointer;
+}
+
+.socialMediaButton:hover {
+  background-color: #FFC800;
+  border-style: none;
 }
 
 .woman-img {
   position: absolute;
-  top: 57%;
-  left: 6%;
-  width: 30%;
-  height: 42%;
-}
-
-.svg-cont {
-  position: relative;
+  top: 0%;
+  left: 30%;
+  width: 70%;
+  height: 90%;
+  z-index: 1;
 }
 
 .woman-svg {
-  overflow: hidden;
+  position: relative;
+  z-index:2;
+}
+
+@media (max-width: 1104px) {
+  .body {
+    padding: unset;
+  }
+
+  .generalContainerInfo {
+    padding: 0px 0px 40px 0px;
+  }
+  
+  .leftSideInfo {
+    margin-top: 550px;
+  }
 }

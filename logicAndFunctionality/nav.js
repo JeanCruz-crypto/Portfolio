@@ -12,6 +12,8 @@ const automaticLi = (info) => {
 
     liContent.appendChild(linkInfo1);
     listContentAbout.appendChild(liContent);
+
+    linkInfo1.style = "color: black; text-decoration: none";
   }
 };
 

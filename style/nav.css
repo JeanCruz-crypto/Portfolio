@@ -1,0 +1,13 @@
+.topContainerInfo {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 2;
+}
+
+.listContentAbout {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}

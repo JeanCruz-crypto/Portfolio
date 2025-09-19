@@ -1,7 +1,19 @@
 body {
   margin: 0;
-  padding: 0px 120px 0px;
-  /* font-family:'Courier New', Courier, monospace  */
+  padding: 0px 120px 120px;
+}
+
+:root {
+  --secondary-color: #00ffff;
+}
+
+:root {
+  --principal-color: #fdc435;
+}
+
+.nameLinkInfo {
+  text-decoration: none;
+  color: black;
 }
 
 .generalContainerInfo {
@@ -18,33 +30,38 @@ body {
 
 .infoSvgBackground {
   position: relative;
-  background-color: #FFC800;
+  background-color: var(--principal-color);
   height: 98%;
   transition-duration: 2s;
 }
 
 .infoSvgBackground:hover {
-  background-color:#00ffff;
+  background-color: var( --secondary-color);
 }
 
 .subtitleProfession {
   margin-top: 50px;
-  color:#FFC800;
+  color:#fdc435;
 }
 
 .titleInfoCustomer {
   font-size: 60px;
+  color: rgb(43, 42, 42);
 }
 
 .textInfoContact {
   color: grey;
-  font-size: 20px;
+  font-family: "Orbitron", sans-serif;
+  font-size: 19px;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .projectsButton {
   border-radius: 5px;
   border-style: none;
-  background-color:#FFC800;
+  background-color: var(--principal-color);
   height: 30px;
   width: 80px;
   margin-right: 10px;
@@ -68,7 +85,7 @@ body {
 }
 
 .socialMediaButton:hover {
-  background-color: #FFC800;
+  background-color: var(--principal-color);
   border-style: none;
 }
 
@@ -86,16 +103,88 @@ body {
   z-index:2;
 }
 
-@media (max-width: 1104px) {
-  .body {
-    padding: unset;
+@media (max-width: 554px){
+  .infoSvgBackground {
+    height: 95%;
+    svg {
+      width: 564px;
+      height: 600px;
+    }
+    img {
+      height: 100%;
+    }
   }
-
+  body {
+    padding: 0 0 70px;
+  }
   .generalContainerInfo {
-    padding: 0px 0px 40px 0px;
+    align-items: center;
+    text-align: center;
   }
-  
+}
+
+.bottomPartForms {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 150px;
+  h1 {
+    text-align: center;
+  }
+  p {
+    font-size: 12px;
+  }
+}
+
+.test {
+  display: flex;
+  flex-direction: column;
+  input {
+    width: 300px;
+  }
+}
+
+.biggerInputForm {
+  height: 70px;
+  width: 300px;
+}
+
+.buttonForForms {
+  border-radius: 5px;
+  border-style: none;
+  background-color: var(--principal-color);
+  height: 30px;
+  width: 80px;
+  transition-duration: 1s;
+  cursor: pointer;
+  transition-duration: 2s;
+  margin-top: 20px;
+}
+
+.buttonForForms:hover {
+  background-color: white;
+  border-style: solid;
+  border-color: black;
+}
+
+@media (max-width: 340px) {
+  .bottomPartForms {
+    input {
+      width: 100%;
+    }
+  }
+}
+
+.socialMediaButtons {
+  display: flex;
+}
+
+@media (max-width: 1104px) {
   .leftSideInfo {
-    margin-top: 550px;
+      margin-top: 550px;
+  }
+  .bottomPartForms {
+    margin-top: 50px;
   }
 }

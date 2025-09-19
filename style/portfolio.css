@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box ;
+}
+
 body {
   margin: 0;
   padding: 0px 120px 120px;
@@ -21,6 +25,7 @@ body {
 }
 
 .rightSideInfo {
+  display: none;
   position: absolute;
   height: 97%;
   right: 0px;
@@ -137,7 +142,7 @@ body {
   }
 }
 
-.test {
+.contactForm {
   display: flex;
   flex-direction: column;
   input {

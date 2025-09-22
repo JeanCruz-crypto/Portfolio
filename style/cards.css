@@ -1,0 +1,71 @@
+.bottomPartForms {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 150px;
+  h1 {
+    text-align: center;
+  }
+  p {
+    font-size: 12px;
+  }
+}
+
+.formulariesContainer {
+  display: flex;
+  flex-direction: column;
+  input {
+    width: 300px;
+  }
+}
+
+.biggerInputForm {
+  height: 70px;
+  width: 300px;
+  resize: none;
+}
+
+.buttonForForms {
+  border-radius: 5px;
+  border-style: none;
+  background-color: var(--principal-color);
+  height: 30px;
+  width: 80px;
+  transition-duration: 1s;
+  cursor: pointer;
+  transition-duration: 2s;
+  margin-top: 20px;
+}
+
+.buttonForForms:hover {
+  background-color: white;
+  border-style: solid;
+  border-color: black;
+}
+
+@media (max-width: 340px) {
+  .bottomPartForms {
+    input {
+      width: 100%;
+    }
+  }
+}
+
+.socialMediaButtons {
+  display: flex;
+}
+
+@media (max-width: 1104px) {
+  .leftSideInfo {
+      margin-top: 550px;
+  }
+  .bottomPartForms {
+    margin-top: 50px;
+  }
+}
+
+.contactInfoFormName {
+  display: flex;
+  flex-direction: column;
+}

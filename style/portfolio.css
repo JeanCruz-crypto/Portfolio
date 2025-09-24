@@ -4,15 +4,13 @@
 
 body {
   margin: 0;
-  padding: 0px 120px 120px;
+  padding: var(--body-padding);
 }
 
 :root {
   --secondary-color: #00ffff;
-}
-
-:root {
   --principal-color: #fdc435;
+  --body-padding: 0px 120px 120px;
 }
 
 .nameLinkInfo {

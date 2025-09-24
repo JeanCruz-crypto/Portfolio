@@ -8,20 +8,30 @@ const createCardAutom = (content) => {
     const h2Card = document.createElement("h2");
     const pCard = document.createElement("p");
     const imgCard = document.createElement("img");
+    const textContainer = document.createElement("div");
 
     h2Card.innerText = createCard.subtitle;
     pCard.innerText = createCard.textContent;
     imgCard.src = createCard.sourceImg;
     imgCard.alt = createCard.imgDescription;
 
-    // li.classList.add("card");
+    liCard.classList.add("card");
+    textContainer.append(h2Card, pCard);
 
+    liCard.append(textContainer, imgCard);
     cardsContainer.appendChild(liCard);
-    liCard.append(h2Card, pCard, imgCard);
+
+    if ((counter + 1) % 2 === 0) {
+      liCard.style = "display: flex; flex-direction: row-reverse";
+    }
   }
 };
 
-const cardContent = [{subtitle: "test", textContent: "lets test how its working", 
-                    sourceImg: "../assets/images/ProjectExample.jpg", imgDescription: "textAboutDescription"}];
+const cardContent = 
+[
+  {subtitle: "test", textContent: "lets test how its working", sourceImg: "../assets/images/ProjectExample.jpg", imgDescription: "textAboutDescription"},
+  {subtitle: "test", textContent: "lets test how its working", sourceImg: "../assets/images/ProjectExample.jpg", imgDescription: "textAboutDescription"},
+  {subtitle: "test", textContent: "lets test how its working", sourceImg: "../assets/images/ProjectExample.jpg", imgDescription: "textAboutDescription"},
+];
 
 createCardAutom(cardContent);

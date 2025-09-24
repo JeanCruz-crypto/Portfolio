@@ -1,0 +1,21 @@
+.socialMediaButtons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.socialMediaInstagram {
+  height: 30px;
+  width: 30px;
+}
+
+.socialMediaLinkdIn {
+  height: 30px;
+  width: 30px;
+}
+
+.socialMediaMail {
+  height: 30px;
+  width: 30px;
+}

@@ -25,7 +25,7 @@ body {
 }
 
 .rightSideInfo {
-  display: none;
+  /* display: none; */
   position: absolute;
   height: 700px;
   right: 0px;

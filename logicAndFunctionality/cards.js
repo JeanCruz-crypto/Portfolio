@@ -1,15 +1,27 @@
 const projectCards = document.querySelector(".projectCards");
 const cardsContainer = document.querySelector(".cardsContainer");
 
-const createCard = () => {
-  const li = document.createElement("li");
-  const h2 = document.createElement("h2");
-  const p = document.createElement("p");
-  const img = document.createElement("img");
+const createCardAutom = (content) => {
+  for(let counter= 0; counter < content.length; counter++){
+    let createCard = content[counter];
+    const liCard = document.createElement("li");
+    const h2Card = document.createElement("h2");
+    const pCard = document.createElement("p");
+    const imgCard = document.createElement("img");
 
-  li.classList.add("card");
+    h2Card.innerText = createCard.subtitle;
+    pCard.innerText = createCard.textContent;
+    imgCard.src = createCard.sourceImg;
+    imgCard.alt = createCard.imgDescription;
 
-  cardsContainer.appendChild(li);
+    // li.classList.add("card");
+
+    cardsContainer.appendChild(liCard);
+    liCard.append(h2Card, pCard, imgCard);
+  }
 };
 
-createCard();
+const cardContent = [{subtitle: "test", textContent: "lets test how its working", 
+                    sourceImg: "../assets/images/ProjectExample.jpg", imgDescription: "textAboutDescription"}];
+
+createCardAutom(cardContent);

@@ -1,0 +1,20 @@
+:root {
+  --principal-color: #fdc435;
+  --secondary-color: #00ffff;
+  --body-padding: 0px 120px 120px;
+}
+
+.infoSvgBackground:hover {
+  background-color: var( --secondary-color);
+}
+
+.projectsButton:hover {
+  background-color: white;
+  border-style: solid;
+}
+
+.socialMediaButton:hover {
+  background-color: var(--principal-color);
+  border-style: none;
+}
+

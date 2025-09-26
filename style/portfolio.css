@@ -1,16 +1,6 @@
-* {
-  box-sizing: border-box ;
-}
-
 body {
   margin: 0;
   padding: var(--body-padding);
-}
-
-:root {
-  --secondary-color: #00ffff;
-  --principal-color: #fdc435;
-  --body-padding: 0px 120px 120px;
 }
 
 .nameLinkInfo {
@@ -34,12 +24,11 @@ body {
 .infoSvgBackground {
   position: relative;
   background-color: var(--principal-color);
-  height: 97%;
+  height: 95%;
   transition-duration: 2s;
-}
-
-.infoSvgBackground:hover {
-  background-color: var( --secondary-color);
+  svg {
+    display: block;
+  }
 }
 
 .subtitleProfession {
@@ -72,11 +61,6 @@ body {
   cursor: pointer;
 }
 
-.projectsButton:hover {
-  background-color: white;
-  border-style: solid;
-}
-
 .socialMediaButton {
   border-radius: 5px;
   border-color: black;
@@ -91,11 +75,6 @@ body {
   }
 }
 
-.socialMediaButton:hover {
-  background-color: var(--principal-color);
-  border-style: none;
-}
-
 .woman-img {
   position: absolute;
   top: 0%;
@@ -106,6 +85,7 @@ body {
 }
 
 .woman-svg {
+  display: block;
   position: relative;
   z-index:2;
 }

@@ -15,14 +15,17 @@ const createCardAutom = (content) => {
     imgCard.src = createCard.sourceImg;
     imgCard.alt = createCard.imgDescription;
 
+    textContainer.classList.add("textContainerCard");
     liCard.classList.add("card");
-    textContainer.append(h2Card, pCard);
+    imgCard.classList.add("imgCard");
 
+    textContainer.append(h2Card, pCard);
     liCard.append(textContainer, imgCard);
     cardsContainer.appendChild(liCard);
 
     if ((counter + 1) % 2 === 0) {
       liCard.style = "display: flex; flex-direction: row-reverse";
+      imgCard.style = "border-radius: 25px 0 0 25px";
     }
   }
 };

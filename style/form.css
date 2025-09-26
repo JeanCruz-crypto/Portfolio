@@ -55,11 +55,6 @@
 }
 
 @media (max-width: 340px) {
-  .bottomPartForms {
-    input {
-      width: 100%;
-    }
-  }
 }
 
 .socialMediaButtons {

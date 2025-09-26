@@ -1,4 +1,34 @@
+.projectCards {
+  text-align: center;
+  margin-top: 200px;
+}
+
+.cardsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  gap: 50px;
+}
+
 .card {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  border-radius: 25px;
+  box-shadow: 0 2px 10px rgb(206, 206, 206);
+  width: 80%;
+  height: 80%;
 }
+
+.textContainerCard {
+  width: 50%;
+}
+
+.imgCard {
+  border-radius: 0 25px 25px 0;
+  width: 50%;
+}
+
+
+

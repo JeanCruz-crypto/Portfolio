@@ -23,10 +23,10 @@ const createCardAutom = (content) => {
     liCard.append(textContainer, imgCard);
     cardsContainer.appendChild(liCard);
 
-    if ((counter + 1) % 2 === 0) {
-      liCard.style = "display: flex; flex-direction: row-reverse";
-      imgCard.style = "border-radius: 25px 0 0 25px";
-    }
+    // if ((counter + 1) % 2 === 0) {
+    //   liCard.style = "display: flex; flex-direction: row-reverse";
+    //   imgCard.style = "border-radius: 25px 0 0 25px";
+    // }
   }
 };
 

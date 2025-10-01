@@ -2,6 +2,7 @@
   --principal-color: #fdc435;
   --secondary-color: #00ffff;
   --body-padding: 0px 120px 120px;
+  --projects-text-style: 3px solid var(--principal-color);
 }
 
 .infoSvgBackground:hover {
@@ -18,3 +19,15 @@
   border-style: none;
 }
 
+.buttonForForms:hover {
+  background-color: white;
+  border-style: solid;
+  border-color: black;
+}
+
+.card:nth-Child(even){
+  display: flex; flex-direction: row-reverse;
+  img {
+    border-radius: 25px 0 0 25px;
+  }
+}

@@ -1,9 +1,12 @@
+footer {
+  margin-top: 70px;
+}
+
 .bottomContainerSocialMedia {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 60px;
 }
 
 .socialMediaButtons {
@@ -14,18 +17,18 @@
 }
 
 .socialMediaInstagram {
-  height: 30px;
-  width: 30px;
+  height: 25px;
+  width: 25px;
 }
 
 .socialMediaLinkdIn {
-  height: 30px;
-  width: 30px;
+  height: 25px;
+  width: 25px;
 }
 
 .socialMediaMail {
-  height: 30px;
-  width: 30px;
+  height: 25px;
+  width: 25px;
 }
 
 .bottomPartShapeSvg {

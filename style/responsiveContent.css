@@ -1,0 +1,15 @@
+@media (max-width: 340px) {
+}
+
+.socialMediaButtons {
+  display: flex;
+}
+
+@media (max-width: 1104px) {
+  .leftSideInfo {
+      margin-top: 550px;
+  }
+  .bottomPartForms {
+    margin-top: 50px;
+  }
+}

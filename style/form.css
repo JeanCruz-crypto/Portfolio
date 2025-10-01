@@ -48,29 +48,14 @@
   margin-top: 20px;
 }
 
-.buttonForForms:hover {
-  background-color: white;
-  border-style: solid;
-  border-color: black;
-}
-
-@media (max-width: 340px) {
-}
-
-.socialMediaButtons {
-  display: flex;
-}
-
-@media (max-width: 1104px) {
-  .leftSideInfo {
-      margin-top: 550px;
-  }
-  .bottomPartForms {
-    margin-top: 50px;
-  }
-}
-
 .contactInfoFormName {
   display: flex;
   flex-direction: column;
+}
+
+.bottomPartForms {
+  h1 {
+    text-decoration: underline var(--projects-text-style);
+    text-underline-offset: 10px;
+  }
 }
